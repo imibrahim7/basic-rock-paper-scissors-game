@@ -1,0 +1,128 @@
+
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 1000;
+  
+}
+
+
+.all_choice_btns {
+    display: flex;
+    justify-content: center;
+    transform: translate(88px, 300px);
+    
+
+}
+
+
+.choice_btn {
+    font-size: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60px;
+    margin: 20px;
+    border: none;
+    background-color: rgba(255, 4, 4, 0.548);
+    transition: 0.5s;
+    font-family: "Space Grotesk", sans-serif;
+    color: aliceblue;
+
+}
+
+
+.choice_btn:hover {
+    background-color: rgb(84, 1, 1);
+    transition: all ease-in-out 100ms;
+    color: rgb(158, 102, 73);
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.scissors_btn {
+    transform: translate(-255px, 140px);
+}
+
+.picked_moves {
+    display: flex;
+    justify-content: center;
+    gap: 35rem;
+}
+
+.user_move, .computer_move {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    color: rgba(251, 81, 81, 0.842);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    
+}
+
+
+.show_result {
+    display: flex;
+    justify-content: center;
+    transform: translate(0px, 150px);
+    font-size: 30px;
+    margin: -150px;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.score_points {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.reset_btn_div {
+    display: flex;
+    justify-content: center;
+    transform: translate(-5px, 300px);
+}
+
+.reset_btn {
+    font-size: 30px;
+    width: 170px;
+    height: 55px;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(131, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+
+}
+
+.reset_btn:hover {
+    background-color: rgb(237, 229, 229);
+    color: rgb(7, 7, 7);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+}
